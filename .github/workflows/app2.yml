@@ -14,7 +14,7 @@ on:
   pull_request:
     branches: [ "main" ]
     paths:
-      - 'app1/**'
+      - 'app2/**'
 
 jobs:
   build:
@@ -30,7 +30,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      working-directory: app1
+      working-directory: app2
       run: mvn clean package
 
       # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
