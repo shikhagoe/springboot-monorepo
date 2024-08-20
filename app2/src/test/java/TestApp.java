@@ -3,7 +3,7 @@ import org.junit.Test;
 public class TestApp {
 
   @Test
-  void test() {
+  public void test() {
     System.out.println("Hello world! aap2");
   }
 }
